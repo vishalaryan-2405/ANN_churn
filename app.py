@@ -1,3 +1,4 @@
+
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import pickle
@@ -147,4 +148,5 @@ if st.button("Predict Churn"):
     if prediction_prob > 0.5:
         st.error("⚠️ Customer is likely to churn.")
     else:
+
         st.success("✅ Customer is not likely to churn.")
